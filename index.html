@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paean Support</title>
+<meta name="description" content="Help and contact for Paean for Navidrome on iPhone and Mac.">
+<meta name="color-scheme" content="dark">
+<style>
+  :root {
+    --bg: #0a0a0b;
+    --card: #141416;
+    --line: #26262a;
+    --text: #ececee;
+    --muted: #a1a1a8;
+    --gold: #c7a55e;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 64px; height: 64px; border-radius: 15px; }
+  .app { font-size: 15px; color: var(--muted); margin: 0; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 18px 0 28px; }
+  .contact {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 20px; margin-bottom: 36px;
+  }
+  .contact h2 { margin-top: 0; }
+  .button {
+    display: inline-block; background: var(--gold); color: #141414; font-weight: 600;
+    padding: 9px 18px; border-radius: 999px; margin: 4px 0 10px;
+  }
+  .button:hover { text-decoration: none; filter: brightness(1.06); }
+  h2 { font-size: 21px; margin: 36px 0 10px; }
+  h3 { font-size: 17px; margin: 22px 0 4px; }
+  p { margin: 6px 0; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  code {
+    font: 15px ui-monospace, "SF Mono", Menlo, monospace; background: var(--card);
+    border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; word-break: break-all;
+  }
+  .muted { color: var(--muted); }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="Paean app icon">
+    <div>
+      <p class="app">Paean for Navidrome</p>
+      <h1>Support</h1>
+    </div>
+  </header>
+  <p class="lead">Paean plays the music on your own Navidrome server, on your iPhone and your Mac.
+    One purchase gets you both.</p>
+
+  <div class="contact">
+    <h2>Get in touch</h2>
+    <a class="button" href="mailto:paean-support@pm.me?subject=Paean%20support">Email support</a>
+    <p class="muted">paean-support@pm.me. Please include your device, its iOS or macOS version, the Paean
+      version (shown in Settings) and your server's version.</p>
+  </div>
+
+  <h2>What you need</h2>
+  <ul>
+    <li>A <a href="https://www.navidrome.org">Navidrome</a> server, or another Subsonic-compatible
+      server, that you run yourself. Paean doesn't include any music or a streaming subscription.</li>
+    <li>An iPhone with iOS 16 or later, or a Mac with macOS 13 or later.</li>
+  </ul>
+
+  <h2>Getting started</h2>
+  <p>Open Paean and enter your server's address, your user name and your password. The address
+    includes <code>http://</code> or <code>https://</code> and the port if it has one, for example
+    <code>https://music.example.com</code> or <code>http://192.168.1.20:4533</code>.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>Paean can't reach my server</h3>
+  <ul>
+    <li>Check the address, including <code>http://</code> or <code>https://</code> and the port.</li>
+    <li>Open the same address in a web browser on that device. If Navidrome doesn't load there,
+      the server isn't reachable from that network.</li>
+    <li>If the server is on your home network, the device needs to be on that network too, or
+      the server needs a way in from outside.</li>
+  </ul>
+
+  <h3>Artist photos, bios or lyrics are missing</h3>
+  <p>These come from your server. Artist photos and bios need Navidrome's Last.fm agent turned
+    on. Lyrics come from your files' tags or from <code>.lrc</code> files next to them.</p>
+
+  <h3>Listening offline</h3>
+  <p>Download albums or playlists, and they play without a connection. When Paean can't reach
+    your server, it shows what's downloaded. On iPhone you can also turn on
+    <strong>Go offline</strong> in Settings, for a flight or to save data.</p>
+
+  <h3>Equalizer</h3>
+  <p>Paean keeps a separate equalizer profile for each pair of headphones, so your speakers
+    stay flat. On the Mac you can edit profiles and import them from
+    <a href="https://github.com/jaakkopasanen/AutoEq">AutoEQ</a> files. On iPhone you can turn
+    the equalizer on or off and pick a profile.</p>
+
+  <h3>Using your iPhone and Mac together</h3>
+  <p>With both on the same Wi-Fi, each can play on the other or control it. Allow Local Network
+    access when asked. If you said no, turn it on in Settings (iPhone) or System Settings (Mac),
+    under Privacy &amp; Security, then Local Network.</p>
+
+  <h3>Refunds</h3>
+  <p>Apple handles purchases and refunds. You can request one at
+    <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <nav><a href="privacy.html">Privacy Policy</a> · Paean for Navidrome</nav>
+</main>
+</body>
+</html>
